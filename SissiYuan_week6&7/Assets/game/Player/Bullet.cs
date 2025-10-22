@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb2D.velocity = speed * Time.deltaTime * shootDirection;
+        rb2D.linearVelocity = speed * Time.deltaTime * shootDirection;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
